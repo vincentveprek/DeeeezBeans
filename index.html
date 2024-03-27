@@ -1,0 +1,99 @@
+<head>
+    <title>yems</title>
+    <style>
+        :root {
+            --bg: #ece6de;
+            --bg-dark: #b26025;
+            --bg-light: #b66f3f;
+            --bg-border: #c07a48;
+            --text: #302b2d;
+            --text-bar: #F3F3F3;
+        }
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+}
+#header .nav{
+    font-size: 17px;
+}
+.nav option{
+    font-size: 14px;
+}
+#header img{
+    height: 80px;
+    padding: 8px;
+}
+#header a, .nav{
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--text-bar);
+    display: inline-block;
+    background-color: var(--bg-dark);
+    border-left: var(--bg-border) 2px solid;
+    border-bottom: var(--bg-border) 2px solid; 
+    border-top: var(--bg-border) 2px solid; 
+    width: 100px;
+}
+#header a:last-child, .nav{
+    border-right: var(--bg-border) 2px solid;
+}
+#header a:hover{
+    background-color: var(--bg-light);
+}
+#header_logo span{
+    padding-left: 1px;
+}
+#header_logo{
+    background-image: url("assets/pics/hotbeans.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#body{
+    clear: left;
+    padding-top: 3px;
+}
+
+#flavour_text h1 {
+    font-size: 100px;
+}
+#flavour_text h2 {
+    font-size: 45px;
+}
+#flavour_text h3 {
+    font-size: 25px;
+}
+#flavour_text {
+    height: 800px;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div style="float: left;">
+            <a href="" id="header_logo"><span></span></a><a href="">Menu</a><a href="">Menu</a><a href="">Menu</a>
+        </div>
+        <div style="float: right;">
+            <select style="width:120px;" name="cars" id="cars" class="nav">
+                <option value="eng">English</option>
+                <option value="sp">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+    </div>
+    <div id="body">
+        <div id="flavour_text">
+            <h1 style="margin-top:30%; margin-bottom:0px;">Join Today!</h1>
+            <h2 style="margin-top:0px; margin-bottom:0px;">Oppourtunity Awaits</h2>
+            <h2 style="margin-top:0px; margin-bottom:0px;">Placements Avaialable</h2>
+            <h3 style="margin-top:4px; margin-bottom:0px;">E</h3>
+        </div>
+        <!--<marquee behavior="alternate" truespeed scrolldelay="1"><img src="assets/pics/hotbeans.png" width="30"><h1>UWUWUWUWUWUUWUWUWUWUWUW</h1></marquee>-->
+    </div>
+</body>
